@@ -1,0 +1,11 @@
+.bg-img{
+    background-image: url(../../public/assets/banner/bg.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 850px;
+    background-position-x: 400px;
+    background-position-y: -20px;
+}
+
+
+
