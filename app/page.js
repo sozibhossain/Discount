@@ -7,6 +7,8 @@ import { Ri24HoursLine } from "react-icons/ri";
 import { BsBoxSeam } from "react-icons/bs";
 import { MdArrowForwardIos } from "react-icons/md";
 import ExploreTopRestaurants from '@/app/components/exploreTopRestaurants/exploreTopRestaurants';
+import Product from '@/app/components/product/product';
+import Link from 'next/link';
 
 
 
@@ -81,7 +83,7 @@ export default function Home() {
           </div>
           <div className='flex items-center'>
             <div>
-              <h1 className='text-xl'>See All</h1>
+              <Link href="/allExploreTopRestaurants"><h1 className='text-xl'>See All</h1></Link>
             </div>
             <div>
               <MdArrowForwardIos />
@@ -93,6 +95,15 @@ export default function Home() {
         </div>
       </div>
       {/* Explore Top Restaurants area end */}
+
+      {/* Product area start */}
+      <div className='container mx-auto mt-5'>
+        <h1>Product</h1>
+        <div>
+          <Product/>
+        </div>
+      </div>
+      {/* Product area end */}
     </div>
   );
 }
