@@ -11,6 +11,7 @@ import { IoBookOutline } from "react-icons/io5";
 import { GiNoodles } from "react-icons/gi";
 import { FaBowlRice } from "react-icons/fa6";
 import ItemsProduct from "@/app/components/itemsProduct/itemsProduct";
+import SearchBarRestaurants from '../components/searchBar/searchBarRestaurants';
 
 
 export default function page() {
@@ -19,8 +20,9 @@ export default function page() {
         <div>
             <Image src={ItemsBanner}  alt='Item banner'/>
         </div>
-        <div>
-            <h1 className='text-3xl '><span className='text-green-500'>Villagio</span> Restaurant & Bar</h1>
+        <div className='flex justify-between'>
+            <h1 className='text-3xl mt-10'><span className='text-green-500'>Villagio</span> Restaurant & Bar</h1>
+            <SearchBarRestaurants/>
         </div>
         <div className='flex'>
             <CiLocationOn  className="mr-1 mt-1 text-2xl text-green-500"/>

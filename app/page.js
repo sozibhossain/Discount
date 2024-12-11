@@ -9,6 +9,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import ExploreTopRestaurants from '@/app/components/exploreTopRestaurants/exploreTopRestaurants';
 import Product from '@/app/components/product/product';
 import Link from 'next/link';
+import SearchBarHome from './components/searchBar/searchBarHome';
 
 
 
@@ -18,11 +19,12 @@ export default function Home() {
     <div>
       {/* Banner area start */}
       <div className='bg-img'>
-        <div className="container mx-auto py-16">
-          <div class="grid xl:grid-cols-5  md:grid-cols-1 gap-4 ">
-              <div className="xl:col-span-3 md:col-span-5">
-                <h1 className='text-8xl font-bold mt-24'>Good <span className='text-amber-500'>food</span>, great memories</h1>
-                <h1 className='text-4xl pt-5'>Enable diners to customize their booking by requesting a specific table location or view.</h1>
+        <div className="container-area py-16">
+          <div class="grid xl:grid-cols-5  md:grid-cols-1 gap-4">
+              <div className="xl:col-span-3 md:col-span-5 banner-text">
+                <h1 className='font-bold mt-24'>Good <span className='text-amber-500'>food</span>, great <br/> memories</h1>
+                <h2 className=' pt-5'>Enable diners to customize their booking by requesting a specific table location or view.</h2>
+                <SearchBarHome/>
               </div>
               <div className="xl:col-span-2 md:col-span-5">
               <Image className='pt-28' src={Banner} alt='Banner'/>
@@ -32,7 +34,7 @@ export default function Home() {
       </div>
       {/* Banner area end */}
       {/* Feature area start */}
-      <div className="container mx-auto xl:px-28 md:px-26 sm:px-2 mx-10">
+      <div className="container-area xl:px-28 md:px-26 sm:px-2 mx-10">
         <h1>Feature</h1>
           <div class="grid xl:grid-cols-4  md:grid-cols-4 sm:grid-cols-1 gap-2 p-11 bg-inherit rounded-md shadow-xl">
               <div className="flex xl:col-start-1 md:col-start-1 sm:col-start-1">
@@ -76,7 +78,7 @@ export default function Home() {
       {/* Feature area end */}
 
       {/* Explore Top Restaurants area start */}
-      <div className='container mx-auto mt-9'>
+      <div className='container-area restaurants'>
         <div className='flex justify-between'>
           <div>
             <h1 className='text-5xl'>Explore <span className='text-amber-500'>Top Restaurants</span></h1>
@@ -98,7 +100,7 @@ export default function Home() {
       {/* Explore Top Restaurants area end */}
 
       {/* Product area start */}
-      <div className='container mx-auto mt-5'>
+      <div className='container-area mt-5'>
         <h1>Product</h1>
         <div>
           <Product/>

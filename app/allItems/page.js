@@ -5,6 +5,7 @@ import { PiFan } from "react-icons/pi";
 import { IoBookOutline } from "react-icons/io5";
 import { GiNoodles } from "react-icons/gi";
 import { FaBowlRice } from "react-icons/fa6";
+import Link from "next/link";
 
 
 const restaurants = [
@@ -246,31 +247,33 @@ export default function page() {
           <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-8 lg:max-w-7xl">
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 ">
               {restaurants.map((restaurant) => (
-                <div key={restaurant.id} className="group relative bg-inherit rounded-lg shadow-2xl pb-2">
-                  <img
-                    alt={restaurant.imageAlt}
-                    src={restaurant.imageSrc}
-                    className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-                  />
-                  <div className="mt-4 flex justify-between px-2">
+                <Link href="/itemsDetails">
+                  <div key={restaurant.id} className="group relative bg-inherit rounded-lg shadow-2xl pb-2">
+                    <img
+                      alt={restaurant.imageAlt}
+                      src={restaurant.imageSrc}
+                      className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+                    />
+                    <div className="mt-4 flex justify-between px-2">
+                      <div>
+                        <h3 className="text-sm text-gray-700">
+                          <a href={restaurant.href}>
+                            <span aria-hidden="true" className="absolute inset-0" />
+                            {restaurant.name}
+                          </a>
+                        </h3>
+                      </div>
+                      <div className="flex">
+                      <p className="text-sm font-medium text-gray-900">
+                      {restaurant.price}</p>
+                      </div>
+                      
+                    </div>
                     <div>
-                      <h3 className="text-sm text-gray-700">
-                        <a href={restaurant.href}>
-                          <span aria-hidden="true" className="absolute inset-0" />
-                          {restaurant.name}
-                        </a>
-                      </h3>
+                        <p className="text-xs pl-2">{restaurant.description}</p>
                     </div>
-                    <div className="flex">
-                    <p className="text-sm font-medium text-gray-900">
-                    {restaurant.price}</p>
-                    </div>
-                    
                   </div>
-                  <div>
-                      <p className="text-xs pl-2">{restaurant.description}</p>
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

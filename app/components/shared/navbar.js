@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { RiUserLine } from "react-icons/ri";
 import { LuShoppingCart } from "react-icons/lu";
+import SearchBarHeader from '../searchBar/searchBarHeader';
 
 import {
   Dialog,
@@ -66,7 +67,10 @@ export default function navbar() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
+          <Popover className="relative flex">
+            <div>
+              <SearchBarHeader/>
+            </div>
           <PopoverButton className="flex items-center gap-x-1 text-gray-500 text-lg rounded-none">
             All Category
           <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
@@ -134,6 +138,9 @@ export default function navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
+                <div>
+                  <SearchBarHeader/>
+                </div>
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-500 hover:bg-gray-50">
                     All Category
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-[open]:rotate-180" />

@@ -1,10 +1,54 @@
+.container-area{
+    margin: 0 auto;
+    width: 1400px;
+    max-width: 96%;
+}
+
 .bg-img{
     background-image: url(../../public/assets/banner/bg.png);
     background-position: cover;
     background-repeat: no-repeat;
     background-size: 850px;
-    background-position-x: 400px;
+    background-position-x: 350px;
     background-position-y: -20px;
+}
+
+.banner-text h1{
+    font-size: 80px;
+}
+.banner-text h2{
+    font-size: 35px;
+}
+
+.restaurants{
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .bg-img{
+        background-size: 750px;
+        background-position-x: 250px;
+        background-position-y: -17px;
+    }
+    .banner-text h1{
+        font-size: 70px;
+    }
+    .banner-text h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 868px) {
+    .bg-img{
+        background-size: 650px;
+        background-position-x: 200px;
+        background-position-y: 16px;
+    }
+    .banner-text h1{
+        font-size: 50px;
+    }
+    .banner-text h2{
+        font-size: 25px;
+    }
 }
 
 
