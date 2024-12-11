@@ -167,53 +167,77 @@ export default function page() {
     <div className='container mx-auto mt-5'>
       {/* Items area start */}
         <div class="grid xl:grid-cols-12  md:grid-cols-6 sm:grid-cols-4 gap-2 mt-5">
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <BsCupHot className='text-3xl ml-5'/>
-                <p className='text-xs'>Milk</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <BsCupHot className='text-3xl'/>
+                  <p className='text-xs'>Milk</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <BsCupHot className='text-3xl ml-5'/>
-                <p className='text-xs'>Milk</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <BsCupHot className='text-3xl'/>
+                  <p className='text-xs'>Milk</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <BsCupHot className='text-3xl ml-5'/>
-                <p className='text-xs'>Milk</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <BsCupHot className='text-3xl'/>
+                  <p className='text-xs'>Milk</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <IoShirtOutline className='text-3xl ml-5'/>
-                <p className='text-xs'>T Shirt</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <IoShirtOutline className='text-3xl'/>
+                  <p className='text-xs'>T Shirt</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <LuDessert className='text-3xl ml-5'/>
-                <p className='text-xs'>Dessert</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <LuDessert className='text-3xl'/>
+                  <p className='text-xs'>Dessert</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <PiFan className='text-3xl ml-5'/>
-                <p className='text-xs'>Toy</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <PiFan className='text-3xl'/>
+                  <p className='text-xs'>Toy</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <IoBookOutline className='text-3xl ml-5'/>
-                <p className='text-xs'>Book</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <IoBookOutline className='text-3xl'/>
+                  <p className='text-xs'>Book</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <LuDessert className='text-3xl ml-5'/>
-                <p className='text-xs'>Dessert</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <LuDessert className='text-3xl'/>
+                  <p className='text-xs'>Dessert</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <GiNoodles className='text-3xl ml-5'/>
-                <p className='text-xs'>Noodles</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <GiNoodles className='text-3xl'/>
+                  <p className='text-xs'>Noodles</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <BsCupHot className='text-3xl ml-5'/>
-                <p className='text-xs'>Milk</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <BsCupHot className='text-3xl'/>
+                  <p className='text-xs'>Milk</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <GiNoodles className='text-3xl ml-5'/>
-                <p className='text-xs'>Noodles</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <GiNoodles className='text-3xl'/>
+                  <p className='text-xs'>Noodles</p>
+                </div>
               </div>
-              <div className="p-4 bg-inherit rounded-lg shadow-2xl text-center">
-                <FaBowlRice className='text-3xl ml-5'/>
-                <p className='text-xs'>Rice</p>
+              <div className="p-4 bg-inherit rounded-lg shadow-2xl flex items-center justify-center">
+                <div>
+                  <FaBowlRice className='text-3xl'/>
+                  <p className='text-xs'>Rice</p>
+                </div>
               </div>
           </div>
           {/* Items area end */}

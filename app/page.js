@@ -33,7 +33,8 @@ export default function Home() {
       {/* Banner area end */}
       {/* Feature area start */}
       <div className="container mx-auto xl:px-28 md:px-26 sm:px-2 mx-10">
-          <div class="grid xl:grid-cols-4  md:grid-cols-4 sm:grid-cols-1 gap-2 p-11 bg-inherit rounded-md shadow-2xl">
+        <h1>Feature</h1>
+          <div class="grid xl:grid-cols-4  md:grid-cols-4 sm:grid-cols-1 gap-2 p-11 bg-inherit rounded-md shadow-xl">
               <div className="flex xl:col-start-1 md:col-start-1 sm:col-start-1">
                 <div>
                   <BsBoxSeam className='text-5xl mr-2 text-gray-500'/>
@@ -75,7 +76,7 @@ export default function Home() {
       {/* Feature area end */}
 
       {/* Explore Top Restaurants area start */}
-      <div className='container mx-auto mt-5'>
+      <div className='container mx-auto mt-9'>
         <div className='flex justify-between'>
           <div>
             <h1 className='text-5xl'>Explore <span className='text-amber-500'>Top Restaurants</span></h1>

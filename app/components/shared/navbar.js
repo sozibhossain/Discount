@@ -97,7 +97,7 @@ export default function navbar() {
             </PopoverPanel>
           </Popover>
 
-          <Link href="#" className="text-gray-500 text-lg">
+          <Link href="/coupon" className="text-gray-500 text-lg">
             Coupon
           </Link>
           <Link href="#" className="text-gray-500 text-lg">
@@ -108,7 +108,7 @@ export default function navbar() {
           <Link href="#">
             <LuShoppingCart  className='text-2xl mr-4 text-gray-500'/>
           </Link>
-          <Link href="#">
+          <Link href="/user/signIn">
             <RiUserLine  className='text-2xl text-gray-500'/>
           </Link>
         </div>

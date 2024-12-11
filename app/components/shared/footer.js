@@ -35,10 +35,13 @@ export default function footer() {
                 <div>
                     <h4 className='text-slate-300 pb-2'>Quick Link</h4>
                     <div>
-                        <Link href='#' className='text-slate-300 text-xs'>Privacy Policy</Link>
+                        <Link href='/about' className='text-slate-300 text-xs'>About us</Link>
                     </div>
                     <div>
-                        <Link href='#' className='text-slate-300 text-xs'>Terms Of Use</Link>
+                        <Link href='/privacyPolicy' className='text-slate-300 text-xs'>Privacy Policy</Link>
+                    </div>
+                    <div>
+                        <Link href='/termsOfUse' className='text-slate-300 text-xs'>Terms Of Use</Link>
                     </div>
                     <div>
                         <Link href='#' className='text-slate-300 text-xs'>FAQ</Link>
